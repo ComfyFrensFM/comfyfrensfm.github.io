@@ -4,36 +4,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
   <link rel='icon' href='favicon.png' type='image/x-icon'/ >
   <title>🎧 Comfy Frens FM</title>
-  <script type="text/javascript">
-var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-function GetClock(){
-var tzOffset = +1;//set this to the number of hours offset from UTC
-
-var d=new Date();
-var dx=d.toGMTString();
-dx=dx.substr(0,dx.length -3);
-d.setTime(Date.parse(dx))
-d.setHours(d.getHours()+tzOffset);
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
-var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-
-if(nhour==0){ap=" AM";nhour=12;}
-else if(nhour<12){ap=" AM";}
-else if(nhour==12){ap=" PM";}
-else if(nhour>12){ap=" PM";nhour-=12;}
-
-if(nmin<=9) nmin="0"+nmin;
-if(nsec<=9) nsec="0"+nsec;
-
-var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+":"+nsec+ap+"";
-document.getElementById('clockbox').innerHTML=clocktext;
-}
-
-GetClock();
-setInterval(GetClock,1000);
-</script>
 <style>
 
 header {
@@ -113,7 +83,6 @@ button {
 <br>
 <br>
 <h2>Schedule</h2>
-  <div id="clockbox"></div>
 
 <!-- <iframe src="http://free.timeanddate.com/clock/i6drutcc/n78/tlie/fcffffff/tct/pct/ftb/tt0/tw1/tm2/ts1/tb4" frameborder="0" width="109" height="34" allowTransparency="true"></iframe>
 -->

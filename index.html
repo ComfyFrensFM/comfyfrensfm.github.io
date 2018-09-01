@@ -7,20 +7,18 @@
   <title>🎧 Comfy Frens FM</title>
 <style>
   
-.video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 a, a:hover, a:active, a:visited {
@@ -106,8 +104,10 @@ button {
 <br><br>
 <center>
 <h2>Check The Livestream!</h2>
-<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCvd757zq2yiyuAapl0vHQ1w" frameborder="0" allowfullscreen</iframe</div>
-<!--
+<div class="video-responsive">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCvd757zq2yiyuAapl0vHQ1w" frameborder="0" allowfullscreen></iframe>
+</div>
+  <!--
 <br>
 <br>
 <br>
